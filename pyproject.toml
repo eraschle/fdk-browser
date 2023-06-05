@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fdk"
+version = "0.1.0"
+description = ""
+authors = ["Erich Raschle <erichraschle@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+deta = "^1.1.0"
+python-dotenv = "^1.0.0"
+streamlit = "^1.22.0"
+streamlit-option-menu = "^0.3.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.310"
+autopep8 = "^2.0.2"
+isort = "^5.12.0"
+pyflakes = "^3.0.1"
+ptvsd = "^4.3.2"
+debugpy = "^1.6.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
