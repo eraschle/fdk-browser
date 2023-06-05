@@ -185,9 +185,9 @@ class FdkPropertyGateway(AFdkGateway[Property]):
 
     def _as_db_dict(self, model: Property) -> Dict[str, Any]:
         db_dict = super()._as_db_dict(model)
-        # db_dict[_OBJECT_IDS] = db_dict[_CONTENT].pop(_OBJECT_IDS)
-        # db_dict[_PSET_IDS] = db_dict[_CONTENT].pop(_PSET_IDS)
-        # db_dict[_NAME_CLEAN] = db_dict[_CONTENT].pop(_NAME_CLEAN)
+        db_dict[_OBJECT_IDS] = db_dict[_CONTENT].pop(_OBJECT_IDS)
+        db_dict[_PSET_IDS] = db_dict[_CONTENT].pop(_PSET_IDS)
+        db_dict[_NAME_CLEAN] = db_dict[_CONTENT].pop(_NAME_CLEAN)
         return db_dict
 
     def all_names(self) -> Set[str]:
@@ -214,7 +214,7 @@ class FdkPropertySetGateway(AFdkGateway[PropertySet]):
 
     def _as_db_dict(self, model: PropertySet) -> Dict[str, Any]:
         db_dict = super()._as_db_dict(model)
-        # db_dict[_OBJECT_IDS] = db_dict[_CONTENT].pop(_OBJECT_IDS)
+        db_dict[_OBJECT_IDS] = db_dict[_CONTENT].pop(_OBJECT_IDS)
         return db_dict
 
 

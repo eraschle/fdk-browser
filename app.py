@@ -10,7 +10,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 from fdk.storage.gateway import TModel, fdk_gateway
-from fdk.storage.json.gateway import JsonFdkGateway, fdk_import_gateway
+from fdk.storage.json.gateway import fdk_import_gateway
 
 db = fdk_gateway()
 
